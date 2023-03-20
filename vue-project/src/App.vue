@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import Masthead from './components/Masthead.vue'
   import CaptureForm from './components/CaptureForm.vue'
+  import Sidebar from './components/Sidebar.vue'
   import { NLayout, NLayoutContent, NLayoutSider, NLayoutFooter, NLayoutHeader, NSpace } from 'naive-ui'
 </script>
 
@@ -14,12 +15,12 @@
           subheading="United Medicare Advisors saves clients an average of $581 when switching to a new Medigap plan*"
         />
       </n-layout-header>
-      <n-layout has-sider>
-        <n-layout-sider content-style="padding: 24px;">
-          <CaptureForm />
-        </n-layout-sider>
+      <n-layout has-sider style="max-width: 1200px; margin: 0 auto;">
         <n-layout-content content-style="padding: 24px;">
-          Pingshan Road
+          <CaptureForm />
+        </n-layout-content>
+        <n-layout-content content-style="padding: 24px;">
+          <Sidebar />
         </n-layout-content>
       </n-layout>
       <n-layout-footer>Chengfu Road</n-layout-footer>
