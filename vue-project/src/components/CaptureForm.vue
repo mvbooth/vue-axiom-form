@@ -48,6 +48,7 @@
 <style scoped>
     .row {
         display: flex;
+        margin-bottom: 1rem;
     }
     .column {
         flex:1 1 50%;
@@ -76,5 +77,10 @@
     font-weight: 700;
     color: #ffffff !important;
     margin: 0;
+}
+#CaptureForm .formkit-label {
+    font-size: 17px;    
+    color: rgb(74, 74, 74);
+    font-weight: 400;
 }
 </style>
